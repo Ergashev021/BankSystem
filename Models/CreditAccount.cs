@@ -3,7 +3,7 @@ public class CreditAccount : Bank
 {
     public CreditAccount(string ownerName,decimal balance): base(ownerName,balance)
     {
-        
+
     }
     public override void ShowBalance()
     {
@@ -11,14 +11,14 @@ public class CreditAccount : Bank
     }
     public override decimal Withdraw(decimal amount)
     {
-        Console.WriteLine($"You have sent a withdrawal request for ${amount}.");
-        Console.Write("This is the answer to the request: ");
         if (Balance - amount < -5000)
-            Console.WriteLine("Credit limit exceeded.");
-        else
+        {
+            Console.WriteLine("Credit limit exceeded ");
+        }
+        else 
         {
             Balance -= amount;
-            Console.WriteLine("Successful.");
+            Console.WriteLine("Successfully");
             Console.WriteLine(Balance < 0 ? $"You can get ${5000 + Balance} credit again."
                 : $"You can get ${5000} credit.");
         }
