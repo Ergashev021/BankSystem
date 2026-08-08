@@ -71,25 +71,3 @@ while (true)
             break;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-// savingAccount.Deposit(1_000);
-// savingAccount.Withdraw(65000);
-
-// Bank creditAccount = new CreditAccount("Abduraimov",95000);
-// creditAccount.ShowBalance();
-// creditAccount.Deposit(100_000);
-// creditAccount.ShowBalance();
-// creditAccount.Withdraw(175000);
-      
