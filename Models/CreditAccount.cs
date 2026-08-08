@@ -1,18 +1,14 @@
 namespace BankSystem.Models;
-
 public class CreditAccount : Bank
 {
     public CreditAccount(string ownerName,decimal balance): base(ownerName,balance)
     {
         
     }
-    
-
     public override void ShowBalance()
     {
          Console.WriteLine($"Balance : { Balance}");
     }
-
     public override decimal Withdraw(decimal amount)
     {
         Console.WriteLine($"You have sent a withdrawal request for ${amount}.");
@@ -26,7 +22,6 @@ public class CreditAccount : Bank
             Console.WriteLine(Balance < 0 ? $"You can get ${5000 + Balance} credit again."
                 : $"You can get ${5000} credit.");
         }
-
         return Balance;
     }
 }
